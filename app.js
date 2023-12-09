@@ -16,9 +16,9 @@ const producer = kafka.producer();
 
 // Запустите продюсера
 producer.connect().then(() => {
-  console.log('Kafka producer connected');
+  console.log('Kafka connected');
 }).catch((error) => {
-  console.error('Error connecting to Kafka producer:', error);
+  console.error('Error connecting Kafka:', error);
   process.exit(1);
 });
 
